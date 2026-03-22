@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #004d40;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+/* NAV */
+#nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  background: #004d40;
+}
+
+#nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+#nav.active {
+  display: flex;
+}
+
+#menuBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+  background: linear-gradient(rgba(0,77,64,0.7), rgba(0,77,64,0.7)),
+              url('https://picsum.photos/800/600') center/cover;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* CONTACT MAP */
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #004d40;
+  color: white;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  #nav {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    width: 30%;
+  }
+}
