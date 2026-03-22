@@ -94,7 +94,7 @@ section {
 /* CONTACT MAP */
 iframe {
   width: 100%;
-  height: 500px;
+  height: 1000px;
   border: none;
   margin-top: 20px;
 }
@@ -102,7 +102,7 @@ iframe {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 5px;
   background: #004d40;
   color: white;
 }
